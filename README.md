@@ -24,12 +24,26 @@ hivemind-cluster/
 └── PHASE.md                       ← Spécification complète
 ```
 
+## Installation
+
+```bash
+# Cloner
+git clone https://github.com/rtsitola/hivemind-cluster.git
+cd hivemind-cluster
+
+# Installer la dépendance Phase 1
+pip install git+https://github.com/rtsitola/hivemind.git
+# Ou en développement :
+# git clone https://github.com/rtsitola/hivemind.git ../hivemind
+# export PYTHONPATH=$(cd ../hivemind && pwd):$(pwd)
+```
+
 ## Quick start
 
 ```bash
 # Install dependencies
 pip install hivemind
-export PYTHONPATH=/path/to/hivemind:/path/to/hivemind-cluster
+export PYTHONPATH=$(cd ../hivemind && pwd):$(pwd)
 
 # Lister les clusters
 python3 -m hivemind_cluster.cluster_config --config clusters.yaml --summary
@@ -62,7 +76,7 @@ python3 -m hivemind_cluster.redistribute \
 
 ```bash
 cd hivemind_cluster/tests
-PYTHONPATH=/path/to/hivemind:/path/to/hivemind-cluster \
+PYTHONPATH=$(cd ../../hivemind && pwd):$(cd ../.. && pwd) \
   python3 test_export.py && python3 test_weighted_merge.py && \
   python3 test_inbox.py && python3 test_redistribute.py
 ```
