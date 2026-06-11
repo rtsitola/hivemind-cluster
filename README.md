@@ -8,6 +8,19 @@
 
 Multi-cluster : N HiveMinds (Phase 1) nourrissent 1 Global.
 
+> ⚠️ **Statut : Alpha — pas encore battle-tested.**
+> Le code est complet et les tests unitaires passent (4/4), mais ce projet n'a **jamais été déployé en production** avec de vrais utilisateurs et Syncthing réel.
+
+**En attente de :**
+- [ ] Test Syncthing multi-writer (2 machines écrivent simultanément)
+- [ ] Test Phase 2 intégré (3 clusters simulés → 1 global, flux complet)
+- [ ] Hermes skill hivemind (utiliser `remember`/`recall` directement dans le chat)
+- [ ] Déploiement réel avec 3 utilisateurs × 1 semaine
+- [ ] Monitoring/alerte si merge échoue ou watcher down
+- [ ] Stratégie de purge des `processed_events`
+
+**Prêt pour le développement et les tests. Pas encore pour la production.**
+
 **Dépendance :** `pip install hivemind` (Phase 1 package)
 
 📖 **Documentation :**
