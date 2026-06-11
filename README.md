@@ -10,6 +10,11 @@ Multi-cluster : N HiveMinds (Phase 1) nourrissent 1 Global.
 
 **Dépendance :** `pip install hivemind` (Phase 1 package)
 
+📖 **Documentation :**
+- [Guide de déploiement](DEPLOYMENT.md) — étape par étape, Syncthing, watchers
+- [Guide de configuration](CONFIG.md) — poids, expertises, .env, membres
+- [Spécification Phase 2](PHASE.md) — architecture complète
+
 ## Structure
 
 ```
