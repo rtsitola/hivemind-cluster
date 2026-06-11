@@ -4,7 +4,7 @@
   <img width="800" alt="Yggdrasil — Three roots, one tree" src="hivemind_cluster/docs/yggdrasil.jpg" />
 </p>
 
-> **Yggdrasil, l'Arbre-Monde** — trois racines distinctes nourrissent un tronc unique (le Global). Les branches redistribuent la connaissance vers chaque cluster. Rien ne se perd, tout converge et se partage.
+> **Yggdrasil, l'Arbre-Monde** — trois racines distinctes (Audit, Fiscal, Juridique) nourrissent un tronc unique (le Global). Les branches redistribuent la connaissance vers chaque cluster. En arrière-plan, Athéna et sa chouette veillent — la sagesse de la Phase 1 protège l'intelligence collective de la Phase 2.
 
 Multi-cluster : N HiveMinds (Phase 1) nourrissent 1 Global.
 
