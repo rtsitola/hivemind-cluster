@@ -1,0 +1,58 @@
+# HiveMind Cluster Configuration v1
+# ====================================
+# Fichier canonique : ~/.hermes/profiles/<global>/clusters.yaml
+#
+# C'EST ICI que tout est défini : quels clusters existent, qui en est membre,
+# quels sont leurs poids et domaines d'expertise.
+#
+# cluster_weights.json est GÉNÉRÉ à partir de ce fichier (ne pas éditer).
+
+# ── Multiplicateurs globaux ──────────────────────────────────────
+# Appliqués à tous les clusters. Modifier ici, pas dans le code.
+expertise_multiplier: 2.0   # ×2 quand le contenu matche l'expertise du cluster
+monopoly_multiplier: 3.0    # ×3 quand le cluster est le SEUL à avoir cette expertise
+
+# ── Clusters ─────────────────────────────────────────────────────
+clusters:
+  audit:
+    profile: cabinet-audit            # Profil Hermes (dans ~/.hermes/profiles/)
+    weight: 1.0                       # Poids de base (>0, défaut 1.0)
+    expertise:                         # Domaines d'expertise — mots-clés distinctifs
+      - audit                         # ⚠️ sous-chaîne simple (insensible casse)
+      - IFRS                          # "droit" matcherait "endroit"
+      - ISA
+      - fraude
+      - circularisation
+      - matérialité
+      - provisions
+    members:                           # Agents autorisés dans ce cluster
+      - alice
+      - bob
+      - charles
+
+  fiscal:
+    profile: cabinet-fiscal
+    weight: 1.5
+    expertise:
+      - fiscalité
+      - TVA
+      - prix de transfert
+      - imposition
+      - CGI
+      - taxe
+    members:
+      - david
+      - eve
+
+  juridique:
+    profile: cabinet-juridique
+    weight: 2.0
+    expertise:
+      - droit
+      - contrat
+      - contentieux
+      - recours
+      - sociétés
+      - litige
+    members:
+      - frank

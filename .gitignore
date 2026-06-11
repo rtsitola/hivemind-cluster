@@ -1,0 +1,17 @@
+# HiveMind Cluster
+# Generated test clusters
+test_clusters/
+
+# Database files (local-only, never commit)
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.lock
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets
+.env
